@@ -29,7 +29,7 @@ gulp.task('css', function() {
 gulp.task('js', function() {
     let bundler = browserify(paths.main_js)
         .transform('babelify', {
-        presets : [ 'es2015', 'react' ]
+        presets : [ 'env', 'react' ]
     });
 
     if (IS_PRODUCTION) {
