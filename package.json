@@ -11,6 +11,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
+    "child_process": "^1.0.2",
     "compression": "^1.7.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
@@ -20,7 +21,10 @@
     "morgan": "^1.9.0",
     "nunjucks": "^3.0.1",
     "request": "^2.83.0",
-    "serve-favicon": "^2.4.5"
+    "rethinkdb": "^2.3.3",
+    "serve-favicon": "^2.4.5",
+    "thinky": "^2.3.9",
+    "uniqid": "^4.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
