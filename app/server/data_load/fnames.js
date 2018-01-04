@@ -1,4 +1,4 @@
-[
+module.exports = [
     {"name":"Ernest","sex":"boy"},
     {"name":"Thorwald","sex":"boy"},
     {"name":"Haywood","sex":"boy"},

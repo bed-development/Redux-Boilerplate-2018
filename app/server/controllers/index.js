@@ -5,6 +5,7 @@ const apiRouter = require('./routers/api');
 const models = require('../models');
 const r = require('../config/thinky').r;
 const FName = models.FName;
+const LName = models.LName;
 const Article = models.Article;
 
 module.exports = function (app) {
@@ -21,15 +22,3 @@ module.exports = function (app) {
 router.get('/*', (req, res)=>{
   res.render('index', {title:"Test Title"});
 });
-
-function getBoyNames(){
-  return FName.filter({
-    'sex': 'boy',
-  }).run().then((names)=>{
-    if (!names || names.length == 0){
-      return {message:"No Boy Names Found"};
-    }
-
-    return {names};
-  })
-}
