@@ -5,8 +5,7 @@ const r = thinky.r;
 const type = thinky.type;
 
 let LName = thinky.createModel('LName', {
-  name: type.string(),
-  sex: type.string()
+  name: type.string()
 });
 
 LName.ensureIndex("name");

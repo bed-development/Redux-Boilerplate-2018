@@ -8,6 +8,7 @@ let models = {
 
 let files = glob.sync(config.root + '/server/models/!(index)*.js');
 files.forEach(function (file) {
+  console.log("loading " + file);
   let model = require(file);
   models[model.getTableName()] = model;
 });

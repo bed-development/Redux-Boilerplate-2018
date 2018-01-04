@@ -1,45 +1,54 @@
+const colors = require('colors');
+const exec = require('child_process').exec;
+
 const Promise = require('bluebird');
+
 const models = require('../models');
-const r = require('../config/thinky').r;
+
 const FName = models.FName;
 const LName = models.LName;
 
 const FNames = require("./fnames");
 const LNames = require("./lnames");
 
-/*
-FName.run().then((results)=>{
-    console.log("There are " + results.length + " first names");
-})
-
-for(let i = 0; i < FNames.length; i++){
-    let fnj = FNames[i];
-
-    FName.filter({name: fnj.name}).run().then((results)=>{
-        if (results.length == 0){
-            let fn = new FName({name: fnj.name, sex: fnj.sex});
-            fn.saveAll().then((result)=>{
-                console.log("Saved name " + result.name);
-            });
-        }
+saveToFName(FNames).then((test)=>{
+    console.log("Done loading");
+    FName.run().then((results)=>{
+        console.log (results.length + " first names after load.".blue);
     });
-}
-*/
-
-LName.run().then((results)=>{
-    console.log("There are " + results.length + " last names");
 })
 
-for(let i = 0; i < LNames.length; i++){
-    let lnj = LNames[i];
-
-    LName.filter({name: lnj.name}).run().then((results)=>{
-        console.log("RESULT");
-        console.log(results);
-        if (results.length == 0){
-            let ln = new LName({name: fnj.name});
-            ln.saveAll().then((result)=>{
-                console.log("Saved name " + result.name);
+function saveToFName(array){
+    return new Promise((resolve, reject)=>{
+        let next = array.shift();
+        if (next){
+            FName.filter({name: next.name}).run().then((results)=>{
+                if (results.length == 0){
+                    let newName = new FName({
+                        name: next.name,
+                        sex: next.sex
+                    })
+                    newName.saveAll().then((result)=>{
+                        if (array.length > 0){
+                            saveToFName(array);
+                        }
+                        else {
+                            console.log("GOT HERE");
+                            resolve(true);
+                        }
+                    });
+                }
+                else {
+                    console.log("Entry " + next.name + " found!".yellow);
+                    if (array.length > 0){
+                        saveToFName(array);
+                    }
+                    else {
+                        console.log("GOT HERE2");
+                        console.log(resolve());
+                        resolve(true);
+                    }
+                }
             });
         }
     });

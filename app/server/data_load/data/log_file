@@ -1,0 +1,51 @@
+2018-01-04T10:21:00.345870500 0.006378s notice: In recursion: removing file 'G:\\git\\projects\\StoryGame\\app\\server\\data_load\\data\\tmp'
+2018-01-04T10:21:00.345870501 0.006754s warn: Trying to delete non-existent file 'G:\\git\\projects\\StoryGame\\app\\server\\data_load\\data\\tmp'
+2018-01-04T10:21:00.346870900 0.007695s notice: Initializing directory G:\\git\\projects\\StoryGame\\app\\server\\data_load\\data
+2018-01-04T10:21:00.347887000 0.008493s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory 'G:\\git\\projects\\StoryGame\\app\\server\\data_load\\data' did not already exist or is empty.)
+2018-01-04T10:21:00.347887001 0.008539s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2018-01-04T10:21:00.347887002 0.008626s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-01-04T10:21:00.347887003 0.008646s notice: Loading data from directory G:\\git\\projects\\StoryGame\\app\\server\\data_load\\data
+2018-01-04T10:21:00.629067800 0.289330s info: Automatically using cache size of 4575 MB
+2018-01-04T10:21:00.630067300 0.290745s notice: Listening for intracluster connections on port 29015
+2018-01-04T10:21:00.631067700 0.291846s notice: Listening for client driver connections on port 28015
+2018-01-04T10:21:00.631067701 0.291998s notice: Listening for administrative HTTP connections on port 8080
+2018-01-04T10:21:00.631067702 0.292000s notice: Listening on cluster address: 127.0.0.1
+2018-01-04T10:21:00.631067703 0.292001s notice: Listening on driver address: 127.0.0.1
+2018-01-04T10:21:00.631067704 0.292002s notice: Listening on http address: 127.0.0.1
+2018-01-04T10:21:00.631067705 0.292002s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-01-04T10:21:00.631067706 0.292003s notice: Server ready, "GIS_SPEC_PC_eb5" 2653e9d9-41d6-4127-96c2-c9b1dfe76d39
+2018-01-04T10:21:00.884680900 0.545174s notice: A newer version of the RethinkDB server is available: 2.3.6. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2018-01-04T10:21:01.877955500 1.538266s info: Table 5789279d-ef22-4d62-b0d4-d77d8234f2af: Starting a new Raft election for term 1.
+2018-01-04T10:21:01.877955501 1.538927s info: Table 5789279d-ef22-4d62-b0d4-d77d8234f2af: Added replica on this server.
+2018-01-04T10:21:01.885989200 1.546739s info: Table a3325273-cec0-4de2-95ed-4b2233ffa64b: Starting a new Raft election for term 1.
+2018-01-04T10:21:01.886962100 1.547247s info: Table a3325273-cec0-4de2-95ed-4b2233ffa64b: Added replica on this server.
+2018-01-04T10:21:01.927538500 1.588397s info: Table e6a56d2a-88dd-4b18-b761-a85ab8cc2e73: Starting a new Raft election for term 1.
+2018-01-04T10:21:01.928538000 1.589085s info: Table e6a56d2a-88dd-4b18-b761-a85ab8cc2e73: Added replica on this server.
+2018-01-04T10:21:01.967725200 1.628785s info: Table 5789279d-ef22-4d62-b0d4-d77d8234f2af: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-04T10:21:01.988365000 1.649471s info: Table a3325273-cec0-4de2-95ed-4b2233ffa64b: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-04T10:21:01.989365700 1.649628s info: Table e6a56d2a-88dd-4b18-b761-a85ab8cc2e73: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-04T10:21:03.379447500 3.039694s info: Table a3325273-cec0-4de2-95ed-4b2233ffa64b: Configuration is changing.
+2018-01-04T10:21:03.421666700 3.082813s info: Table e6a56d2a-88dd-4b18-b761-a85ab8cc2e73: Configuration is changing.
+2018-01-04T10:29:15.152221400 494.819509s notice: Server got Control-C; shutting down...
+2018-01-04T10:29:15.153209400 494.819646s notice: Shutting down client connections...
+2018-01-04T10:29:16.457404700 0.006966s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2018-01-04T10:29:16.457404701 0.007011s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2018-01-04T10:29:16.457404702 0.007021s notice: Loading data from directory G:\\git\\projects\\StoryGame\\app\\server\\data_load\\data
+2018-01-04T10:29:16.495430100 0.044392s info: Automatically using cache size of 4512 MB
+2018-01-04T10:29:16.496448600 0.046061s notice: Listening for intracluster connections on port 29015
+2018-01-04T10:29:16.529453800 0.078418s notice: Listening for client driver connections on port 28015
+2018-01-04T10:29:16.529453801 0.078562s notice: Listening for administrative HTTP connections on port 8080
+2018-01-04T10:29:16.529453802 0.078565s notice: Listening on cluster address: 127.0.0.1
+2018-01-04T10:29:16.529453803 0.078565s notice: Listening on driver address: 127.0.0.1
+2018-01-04T10:29:16.529453804 0.078574s notice: Listening on http address: 127.0.0.1
+2018-01-04T10:29:16.529453805 0.078576s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-01-04T10:29:16.529453806 0.078576s notice: Server ready, "GIS_SPEC_PC_eb5" 2653e9d9-41d6-4127-96c2-c9b1dfe76d39
+2018-01-04T10:29:16.801643700 0.351433s notice: A newer version of the RethinkDB server is available: 2.3.6. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2018-01-04T10:29:17.716051600 1.265145s info: Table e6a56d2a-88dd-4b18-b761-a85ab8cc2e73: Starting a new Raft election for term 2.
+2018-01-04T10:29:17.736059800 1.285131s info: Table 5789279d-ef22-4d62-b0d4-d77d8234f2af: Starting a new Raft election for term 2.
+2018-01-04T10:29:17.745381200 1.294817s info: Table e6a56d2a-88dd-4b18-b761-a85ab8cc2e73: This server is Raft leader for term 2. Latest log index is 4.
+2018-01-04T10:29:17.749398500 1.298393s info: Table a3325273-cec0-4de2-95ed-4b2233ffa64b: Starting a new Raft election for term 2.
+2018-01-04T10:29:17.786645900 1.336279s info: Table 5789279d-ef22-4d62-b0d4-d77d8234f2af: This server is Raft leader for term 2. Latest log index is 3.
+2018-01-04T10:29:17.828822900 1.378201s info: Table a3325273-cec0-4de2-95ed-4b2233ffa64b: This server is Raft leader for term 2. Latest log index is 4.
+2018-01-04T10:32:50.952295400 214.504792s notice: Server got Control-C; shutting down...
+2018-01-04T10:32:50.953297300 214.505232s notice: Shutting down client connections...
