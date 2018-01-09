@@ -12,7 +12,7 @@ const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 let paths = {
     main_css : [ 'app/client/stylesheets/main.scss' ],
     css      : [ 'app/client/stylesheets/**/*.scss' ],
-    main_js  : [ 'app/client/index.js', 'app/server/controllers/routers/api/index.js' ],
+    main_js  : [ 'app/client/index.js', 'app/server/controllers/routers/api/index.js', 'app/server/data/Effectors/index.js' ],
     js       : [ 'app/client/**/*.js*' ],
 };
 

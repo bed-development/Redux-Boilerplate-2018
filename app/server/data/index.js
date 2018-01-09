@@ -69,7 +69,6 @@ const Generate = {
 function getBefore(list, value){
     let num = list.indexOf(value) + 1;
     let result = list[getRandomInt(num)];
-    console.log(result);
     return result;
 }
 
@@ -77,10 +76,7 @@ function getAfter(list, value){
     let low = list.indexOf(value) + 1;
     let num = list.length - low;
     let index = getRandomInt(num);
-    console.log(index);
-    console.log(low + index);
     let result = list[low + index];
-    console.log(result);
     return result;
 }
 
