@@ -34,10 +34,12 @@ module.exports = function(app, config) {
   
     app.set('trust proxy', 1);
   
-    let controllers = glob.sync(config.root + '/server/controllers/*.js');
+    /*let controllers = glob.sync(config.root + '/server/controllers/*.js');
     controllers.forEach(function (controller) {
       require(controller)(app);
-    });
+    });*/
+    
+    require("../controllers")(app);
   
     app.use(function (req, res, next) {
       let err = new Error('Not Found');

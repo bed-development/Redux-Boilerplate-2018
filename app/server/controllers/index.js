@@ -1,19 +1,16 @@
+const Promise = require('bluebird');
 const express = require('express');
 const router = express.Router();
 const apiRouter = require('./routers/api');
 
-const models = require('../models');
-const r = require('../config/thinky').r;
-const FName = models.FName;
-const LName = models.LName;
-const Article = models.Article;
+const Generate = require('../data');
 
 module.exports = function (app) {
-  
-  //RUN ONCE TO CREATE TABLE
-  //require('../data_load')();
 
-  //console.log(getBoyNames());
+  for (let i = 0; i < 10; i++){
+    let person = Generate.RandomPerson();
+    console.log(JSON.stringify(person));
+  }
 
   app.use('/api', apiRouter);
   app.use('/', router);
@@ -22,3 +19,7 @@ module.exports = function (app) {
 router.get('/*', (req, res)=>{
   res.render('index', {title:"Test Title"});
 });
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
